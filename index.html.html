@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Para Mi Maye Hermosaaa...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <button class="boton-flotante" onclick="document.getElementById('musica').play()">🎵 Reproducir música</button>
+<audio id="musica" loop>
+<source src="Bad Bunny ft. Bomba Estéreo - Ojitos Lindos (Video Oficial) _ Un Verano Sin Ti [wAjHQXrIj9o].mp3" type="audio/mp3">
+</audio>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle, #1e1e30, #1a0e1f);
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0,0,0,0.4);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      color: #ff99cc;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ffddee;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .inicio {
+      background: url('20250624113710527.jpg') center/cover no-repeat;
+      color: white;
+      position: relative;
+    }
+
+    .inicio::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .inicio .contenido {
+      position: relative;
+      z-index: 2;
+      margin-top: 100px;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      color: #ffb6c1;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .cartas {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .carta {
+      background: rgba(255, 182, 193, 0.1);
+      border: 1px solid #ff99cc;
+      padding: 20px;
+      border-radius: 15px;
+      font-size: 1.1em;
+    }
+
+    .final {
+      background: #1a0e1f;
+      color: #ffddee;
+    }
+
+    .final h2 {
+      font-size: 2em;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #ccc;
+    }
+
+    /* Música */
+    audio {
+      display: none;
+    }
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(145deg, #ff69b4, #ff85c1);
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.boton-flotante:hover {
+  background: linear-gradient(145deg, #ff4c9e, #ff69b4);
+  transform: scale(1.05);
+}
+
+.boton-musica:hover {
+  background: linear-gradient(145deg, #ff4c9e, #ff69b4);
+  transform: scale(1.05);
+}
+    
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+  <source src="Bad Bunny ft. Bomba Estéreo - Ojitos Lindos (Video Oficial) _ Un Verano Sin Ti [wAjHQXrIj9o].mp3" type="audio/mp3">
+</audio>
+
+
+  <header>
+    <h1>Para Mi Maye Hermosaaa...💖</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Nuestra Historia</a>
+      <a href="#galeria">Galería</a>
+      <a href="#cartas">Cartas</a>
+      <a href="#final">Mensaje</a>
+    </nav>
+  </header>
+
+  <section class="inicio" id="inicio">
+    <div class="contenido">
+      <h2>Bienvenida, Mi Blanquita Preciosa</h2>
+      <p>
+Este rinconcito digital es un pedacito de mi corazón hecho página. Solo para ti, para recordarte cuánto te amo y lo inmensamente feliz que me haces cada día.      </p>
+    </div>
+  </section>
+
+  <section id="historia">
+    <h2>💖 Nuestra Historia De Amor</h2>
+    <p>
+      Nos conocimos en un momento inesperado, cuando ninguno de los dos imaginaba lo que el destino tenía preparado. Desde ese instante, todo cambió. El 26 de agosto de 2022 marcó el inicio de algo muy especial: nuestra historia de amor.
+
+Desde entonces, hemos vivido un sinfín de momentos. Algunos alegres, otros más difíciles, pero todos nos han enseñado a crecer, a escucharnos, a cuidarnos y, sobre todo, a amarnos más cada día. Lo nuestro no ha sido perfecto, pero ha sido real, fuerte y lleno de amor.
+
+Nos graduamos juntos, cumpliendo metas lado a lado. Viajamos, exploramos nuevos lugares, conocimos el mar juntos, y fuimos creando recuerdos que nadie nos podrá quitar. Cada experiencia compartida nos ha unido más.
+
+Ella… es simplemente hermosa. Blanquita, bajita, con unos ojos que brillan como estrellas, una carita que parece de cuento, unas pestañas que acarician el alma, y esos labios dulces que guardan mil sonrisas. Pero lo más bello está dentro de ella: su corazón, su forma de amar, su forma de estar.
+
+Pasamos muchísimo tiempo juntos, y aún así, nunca me canso de ti. Cada día a tu lado es un nuevo capítulo, una nueva razón para seguir creyendo en el amor verdadero.
+
+Hoy, casi tres años después, seguimos aquí, caminando juntos, tomados de la mano, soñando con todo lo que aún nos falta por vivir. Y si me preguntas si volvería a elegirte… la respuesta siempre será sí.
+
+Te amo más de lo que las palabras pueden decir. Gracias por ser tú, por estar, por todo.
+
+
+    </p>
+    <div id="contador"></div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Recuerdos</h2>
+    <div class="galeria">
+      <img src="IMG-20231122-WA0010.jpg" alt="">
+      <img src="IMG-20231215-WA0185.jpg" alt="">
+      <img src="IMG-20240520-WA0029.jpg" alt="">
+      <!-- Puedes reemplazar estos enlaces por fotos reales -->
+    </div>
+  </section>
+
+  <section id="cartas">
+    <h2>Cartas Para Ti 💌</h2>
+    <div class="cartas">
+      <div class="carta">
+        Eres mi persona favorita en el mundo. Mi cómplice, mi paz, mi abrazo seguro. Gracias por tu amor incondicional, por tu dulzura infinita, y por caminar a mi lado incluso en los días nublados. Contigo, la vida es más bonita.
+      </div>
+      <div class="carta">
+        Cada día me enamoras más. Tu sonrisa ilumina mis días, y tus abrazos son mi hogar favorito.
+      </div>
+      <div class="carta">
+        Quiero seguir creando recuerdos contigo, viajando, soñando, y envejeciendo juntos. Te elijo hoy y siempre.
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="final">
+    <h2>Mi Promesa 💖</h2>
+    <p>
+      Siempre estaré aquí para ti.
+En los días llenos de risas, y también en los que el mundo parezca pesar. En los momentos de calma, y en los de tormenta. No solo cuando todo vaya bien, sino sobre todo cuando sientas que todo se te desordena un poco por dentro.
+Porque elegí estar a tu lado no solo por lo que eres cuando sonríes, sino también por lo que eres cuando callas, cuando dudas, cuando simplemente necesitas un abrazo sin decir nada.
+Quiero ser tu refugio cuando el día sea duro, tu impulso cuando sientas que no puedes más, y tu descanso cuando el mundo se ponga ruidoso.
+No prometo que todo será siempre fácil, pero sí prometo que jamás soltaré tu mano.
+Porque tú eres mi hogar. Y mientras me sigas mirando con esos ojitos lindos, sabré que todo vale la pena.
+      <br><br>
+      Te amo con todo mi corazón y con toda mi alma.<br>
+      <strong>Tu Cami💘</strong>
+    </p>
+  </section>
+
+  <footer>
+    Hecho con mucho amor por tu novio 💘 | 2025
+  </footer>
+
+<script>
+  function reproducirMusica() {
+    const musica = document.getElementById("musica");
+    musica.volume = 1; // asegúrate que no esté en silencio
+    musica.play()
+      .then(() => console.log("🎶 Música reproduciéndose"))
+      .catch(err => console.log("🚫 No se pudo reproducir: ", err));
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reproducir Música</title>
+  <style>
+    .boton-flotante {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(145deg, #ff69b4, #ff85c1);
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
+      cursor: pointer;
+      z-index: 999;
+      transition: 0.3s ease;
+    }
+    .boton-flotante:hover {
+      background: linear-gradient(145deg, #ff4c9e, #ff69b4);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="boton-flotante" onclick="reproducirMusica()">🎵 Reproducir música</button>
+
+  <audio id="musica" loop>
+    <source src="https://dl.sndup.net/6pqm/Ojitos%20Lindos%20-%20Bad%20Bunny%20%26%20Bomba%20Est%C3%A9reo.mp3" type="audio/mp3">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <script>
+    function reproducirMusica() {
+      const musica = document.getElementById("musica");
+      musica.volume = 1;
+      musica.play().then(() => {
+        console.log("🎶 Música reproduciéndose");
+      }).catch(error => {
+        alert("😥 Error al reproducir: " + error.message);
+        console.error("Error:", error);
+      });
+    }
+  </script>
+</body>
+</html>
+
